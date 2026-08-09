@@ -11,8 +11,10 @@ republish them. Each component is deployed unmodified, and all copyright and
 licence notices are retained.
 
 The OCR service adapter is authored by Data Meaning Services Group, Inc. and
-is supplied from a registry we operate. All third-party components are pulled
-from their publishers' registries.
+is supplied from a registry we operate, `datameaning.azurecr.io`. Its
+container image is built on a third-party base image, which is identified
+below along with the source for its components. Every other third-party
+component is pulled from its publisher's own registry.
 
 ---
 
@@ -88,6 +90,15 @@ your agreement.
 | Uvicorn | 0.34.0 | BSD-3-Clause | https://github.com/encode/uvicorn/blob/master/LICENSE.md |
 | HTTPX | 0.28.1 | BSD-3-Clause | https://github.com/encode/httpx/blob/master/LICENSE.md |
 | Python | 3.12 | PSF-2.0 | https://docs.python.org/3/license.html |
+
+The OCR service adapter's container image is built on the official
+`python:3.12-slim` base image, which is Debian GNU/Linux. That base contains
+Debian system packages under a range of licences, including GPL-2.0 and
+GPL-3.0 for parts of the base system. Complete corresponding source for every
+Debian package is published by the Debian Project at
+https://sources.debian.org/, and Data Meaning Services Group, Inc. will
+provide the corresponding source for any package in this image on request to
+legal@datameaning.com.
 
 ---
 
