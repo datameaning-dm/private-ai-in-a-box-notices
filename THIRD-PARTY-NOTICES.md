@@ -16,6 +16,13 @@ container image is built on a third-party base image, which is identified
 below along with the source for its components. Every other third-party
 component is pulled from its publisher's own registry.
 
+**Complete licence texts are included in this repository**, in the
+[`licenses/`](licenses/) directory — one file per component, taken from that
+project's own repository at the version deployed. The tables below link to
+each project's upstream licence as well; the copies here are the
+authoritative record of the terms as they stood when this offer was
+published, and do not change if an upstream file moves or is edited.
+
 ---
 
 ## Container images
